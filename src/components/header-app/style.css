@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: fixed;
+    width: 100vw;
+    transition: all .5s ease;
+    z-index: 99999;
+}
+
+.background{
+    background-color: rgb(255, 255, 255);
+}
+
+.container-header{
+    display: flex;
+    align-items: center;
+    padding: 30px 150px;
+}
+
+.container-logo{
+    margin-right: 47px;
+}
+
+.container-logo a svg{
+    width: 71px;
+}
+
+.container-menu{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.container-menu nav a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #828282;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 20px;
+    transition: all .5s ease;
+}
+
+.container-menu nav a:hover{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.container-menu .container-button button{
+    margin-right: 20px;
+    width: 90px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#desktop.container-menu .container-button button{
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 5px;
+}
+
+#desktop.container-menu .container-button button:last-child{
+    border: white 1px solid;
+}
+
+#mobile.container-menu.hide{
+    display: none;
+}
+
+#mobile.container-menu{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: rgb(78, 85, 85);
+    color: white;
+    border-radius: 10px;
+    width: 80vw;
+    top: 15vh;
+    right: 10%;
+}
+
+#mobile.container-menu nav,
+#mobile.container-menu .container-button{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+#mobile.container-menu nav{
+    flex-direction: column;
+}
+
+#mobile.container-menu .container-button button{
+    margin: 0px 10px;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border-color: white;
+}
+
+#mobile.container-menu nav a{
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.container-toggle-btn svg{
+    color: #828282;
+}
+
+.mySvg{
+    transition: all 0.5s ease;
+}
+
+.rotate{
+    transform: rotate(90deg);
+}
+
+#toggleBtn{
+    display: none;
+}
+
+@media screen and (max-width: 420px){
+    #desktop.container-menu{
+        display: none;
+    }
+
+    #toggleBtn{
+        display: block;
+    }
+
+    .container-header{
+        width: 100%;
+        background-color: white;
+        justify-content: space-between;
+        padding: 20px 30px;
+    }
+}
