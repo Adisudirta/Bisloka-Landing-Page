@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../assets/hero-background.jpeg);
+    background-size: cover;
+}
+
+.container-banner{
+    padding: 13vh 150px 0px;
+    display: flex;
+    height: 100vh;
+}
+
+.prompt{
+    flex-basis: 40%;
+    margin-right: 20%;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.prompt div{
+    width: 450px;
+}
+
+.prompt h2{
+    font-size: 52px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.prompt p{
+    font-size: 20px;
+    line-height: 32px;
+    color: #4F4F4F;
+}
+
+.container-hero-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 420px){
+    .container{
+        width: 100vw;
+        background-image: url(../../assets/hero-background-mobile.png);
+        background-size: cover;
+    }
+
+    .container-banner{
+        padding: 30px 10vh 30px;
+        flex-direction: column-reverse;
+    }
+
+    .container-hero-image img{
+        width: 95vw;
+    }
+
+    .prompt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .prompt div{
+        width: 80vw;
+    }
+
+    .prompt h2{
+        font-size: 35px;
+    }
+
+    .prompt p {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-form-card{
+    font-family: 'Roboto', sans-serif;
+    width: 80vw;
+    padding: 60px 75px;
+    box-shadow: 0px 25px 50px 0px #0000000D;
+    margin: auto;
+    border-radius: 10px;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    top: -70px;
+}
+
+.container-form-card h2{
+    font-size: 36px;
+}
+
+.container-form-card p{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.container-list{
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+    margin: 30px 0px;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-list .item p{
+    font-size: 14px;
+    color: #828282;
+}
+
+.container-list .item div{
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.container-list .item div p{
+    color: #4F4F4F;
+    font-size: 18px;
+}
+
+.container-list .item div img{
+    margin-right: 10px;
+}
+
+.container-btn{
+    text-align: right;
+}
+
+.container-btn button{
+    width: 190px;
+    color: white;
+    border: none;
+    padding: 19px;
+    border-radius: 10px;
+    background-color: #3BC5E9;
+}
+
+@media screen and (max-width: 420px){
+    .container-form-card{
+        width: 85vw;
+        padding: 20px 35px;
+        top: -10px;
+    }
+
+    .container-form-card h2{
+        font-size: 20px;
+    }
+
+    .container-form-card p{
+        font-size: 12px;
+    }
+
+    .container-list{
+        flex-direction: column;
+    }
+
+    .container-list .item{
+        margin: 15px 0px;
+    }
+
+    .container-list .item p{
+        font-size: 12px;
+    }
+
+    .container-btn button{
+        width: 90px;
+    }
+}
