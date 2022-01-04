@@ -7,6 +7,9 @@
 }
 
 .about-us{
+    background-image: url("../../assets/background-dot2.png");
+    background-size: cover;
+    background-position: center;
     font-family: 'Roboto', sans-serif;
     padding: 67px 150px;
 }

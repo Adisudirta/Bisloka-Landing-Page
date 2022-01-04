@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.armada-kami{
+    background-image: url("../../assets/background-dot2.png");
+    background-position: center;
+    padding: 67px 150px;
+}
+
+.armada-kami p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.3em;
+    text-align: center;
+    color:#3BC5E9;
+    margin-bottom: 18px;
+}
+
+.armada-kami h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    line-height: 65px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 67px;
+}
+
+.armada-kami .container-card-armada-kami{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.armada-kami button{
+    font-weight: bold;
+    background-color: #3BC5E9;
+    padding: 20px 68px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.armada-kami button span{
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: right;
+    margin-right: 11px;
+}
+
+.armada-kami>div:last-child{
+    margin-top: 67px;
+    width: 100%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 420px){
+    .armada-kami .container-card-armada-kami{
+        flex-direction: column;
+    }
+
+    .armada-kami{
+        padding: 20px 40px;
+    }
+
+    .armada-kami p{
+        font-size: 12px;
+    }
+
+    .armada-kami h2{
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .armada-kami button span{
+        font-size: 14px;
+    }
+
+    .armada-kami button img{
+        width: 18px;
+    }
+
+    .armada-kami>div:last-child{
+        margin-top: 25px;
+    }
+}

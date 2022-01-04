@@ -25,6 +25,8 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.5.2",
+    "glider-js": "^1.7.7",
     "regenerator-runtime": "^0.13.9"
   }
 }

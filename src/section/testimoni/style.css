@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.testimoni{
+    font-family: 'Roboto', sans-serif;
+    padding: 67px 150px;
+}
+
+.testimoni>.container-testimoni>span{
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.3em;
+    text-align: left;
+    color: #3BC5E9;
+    margin-bottom: 18.5px;
+    display: inline-block;
+}
+
+.testimoni>.container-testimoni>h2{
+    font-size: 48px;
+    line-height: 65px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.carousel{
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-wrapper{
+    width: 200%;
+    padding: 67px 0px;
+    display: flex;
+}
+
+.container-testimoni>.btn-container{
+    display: flex;
+}
+
+.container-testimoni>.btn-container>button{
+    border: none;
+    padding: 25px;
+    margin-right: 18px;
+    border-radius: 50%;
+    box-shadow: 0px 5.0066375732421875px 12.516592979431152px 0px #00000012;
+    cursor: pointer;
+}
+
+.container-testimoni>.btn-container>button>img{
+    width: 15px;
+    height: 15px;
+}
+
+#left-btn{
+    background-color: #FFFFFF;
+}
+
+#right-btn{
+    background-color: #3BC5E9;
+}
+
+@media screen and (max-width: 420px){
+    .testimoni{
+        padding: 20px 40px;
+    }
+
+    .testimoni>.container-testimoni>span{
+        font-size: 12px;
+    }
+
+    .testimoni>.container-testimoni>h2{
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .container-testimoni>.btn-container>button{
+        padding: 15px;
+    }
+}
